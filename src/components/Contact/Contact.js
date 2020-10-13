@@ -7,11 +7,6 @@ let online = true;
 let avatar = "https://randomuser.me/api/portraits/men/81.jpg";
 let name = "Hank Moody";
 
-online.setState(prevState => ({
-    check: !prevState.check
-  }));
-
-
 function Contact(){
     return(
             <div className = "Contact">
