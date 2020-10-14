@@ -1,4 +1,7 @@
 /* Component enclosing tag */
+body{
+  background-color: #a3a3a3;
+}
 .Contact {
     /* padding: 1e */
     background: #555;

@@ -1,6 +1,7 @@
 import React from 'react';
 import './reset.css';
-import Contact from './components/Contact/Contact'
+import Contact from './components/Contact/Contact';
+
 
 const users = [
 {online: true,
@@ -19,8 +20,9 @@ name: "Marcel El-Metwally"},
 function App() {
   return (
     <div className="App">
-      {users.map((user) => (
+      {users.map((user, index) => (
       <Contact 
+        key = {index}
         online = {user.online}
         avatar = {user.avatar}
         name = {user.name}

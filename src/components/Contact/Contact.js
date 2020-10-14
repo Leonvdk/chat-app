@@ -1,11 +1,6 @@
 import React from 'react';
 import './Contact.css';
-
-
-
-let online = false;
-let avatar = "https://randomuser.me/api/portraits/men/81.jpg";
-let name = "Hank Moody";
+import PropTypes from "prop-types";
 
 function Contact(props){
     return(
@@ -23,6 +18,13 @@ function Contact(props){
             </div>
     );
 }
+
+
+Contact.propTypes = {
+  online: PropTypes.bool.isRequired,
+  name: PropTypes.string.isRequired,
+  avatar: PropTypes.node.isRequired,
+};
 
 export default Contact;
 
